@@ -1,4 +1,4 @@
-//Continuear en el video 365
+//Continuear en el video 388
 
 import express from 'express'
 import router from './router'
@@ -9,7 +9,7 @@ async function connectDB() {
     try {
        await db.authenticate() 
        db.sync()
-       console.log(colors.bgGreen('Conexion exitosa a la base de datos'))
+       //console.log(colors.bgGreen('Conexion exitosa a la base de datos'))
     } catch (error) {
         console.log(error)
         console.log(colors.bgRed('Hubo un error al  conectar a la BD'))
