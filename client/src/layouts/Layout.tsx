@@ -1,10 +1,19 @@
-import { Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom";
 
 export default function Layout() {
   return (
     <>
-        <div>Desde Layout</div>
-        <Outlet/>
+      <header className=" bg-slate-800">
+        <div className="mx-auto max-w-5xl py-10">
+          <h1 className="text-4xl font-extrabold text-white">
+            Administrador de Productos
+          </h1>
+        </div>
+      </header>
+
+      <main className="mt-10 mx-auto max-w-5xl p-10 bg-white shadow">
+        <Outlet />
+      </main>
     </>
-  )
+  );
 }

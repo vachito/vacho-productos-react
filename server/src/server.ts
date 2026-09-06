@@ -1,5 +1,3 @@
-//Continuear en el video 388
-
 import express from 'express'
 import router from './router'
 import db from './config/db'
